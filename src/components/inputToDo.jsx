@@ -1,18 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const InputToDo = () => {
-  return (
-    <form action="">
-      <input 
-        type="text"
-        name='title'
-        placeholder='Add Todo...' 
-      />
-      <button>
-        
-      </button>
-    </form>
-  );
-};
+const InputToDo = () => (
+  <form action="input" className="rounded-full border flex-row pl-2">
+    <input type="text" placeholder="Add todos..." />
+    <button type="submit" className="text-netral-50 bg-green-600 rounded-full">
+      +
+    </button>
+  </form>
+);
 
 export default InputToDo;
